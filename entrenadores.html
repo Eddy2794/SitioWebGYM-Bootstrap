@@ -82,9 +82,12 @@
                     </ul>
                     
                     <div class="theme-toggle ms-3">
-                        <div class="form-check form-switch">
+                        <div class="form-check form-switch position-relative">
                             <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
-                            <label class="form-check-label" for="dark-mode-toggle"></label>
+                            <label class="form-check-label" for="dark-mode-toggle">
+                                <i class="fas fa-sun theme-icon theme-icon-light"></i>
+                                <i class="fas fa-moon theme-icon theme-icon-dark"></i>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -562,72 +565,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Custom scripts -->
     <script src="js/main.js"></script>
-    
-    <!-- Script adicional para garantizar el efecto flip -->
-    <script>
-        // Script de respaldo para el efecto flip
-        document.addEventListener('DOMContentLoaded', function() {
-            // Asegurarse de que la funcionalidad esté disponible incluso sin jQuery
-            const trainerCards = document.querySelectorAll('.trainer-card');
-            
-            // Función para verificar soporte de transform-style: preserve-3d
-            function supportsPreserve3D() {
-                const el = document.createElement('div');
-                el.style.transformStyle = 'preserve-3d';
-                return el.style.transformStyle === 'preserve-3d';
-            }
-            
-            // Si el navegador no soporta preserve-3d, aplicamos soluciones alternativas
-            if (!supportsPreserve3D()) {
-                document.body.classList.add('no-preserve-3d');
-                // Agregar estilos alternativos para navegadores sin soporte
-                const style = document.createElement('style');
-                style.textContent = `
-                    .no-preserve-3d .trainer-card:hover .trainer-front {
-                        opacity: 0;
-                    }
-                    .no-preserve-3d .trainer-back {
-                        opacity: 0;
-                    }
-                    .no-preserve-3d .trainer-card:hover .trainer-back {
-                        opacity: 1;
-                    }
-                `;
-                document.head.appendChild(style);
-            }
-            
-            trainerCards.forEach(card => {
-                // Reiniciar animación de barras de progreso al entrar/salir
-                card.addEventListener('mouseenter', function() {
-                    const progressBars = this.querySelectorAll('.progress-bar');
-                    progressBars.forEach(bar => {
-                        const width = bar.getAttribute('aria-valuenow') + '%';
-                        bar.style.width = 0;
-                        setTimeout(() => {
-                            bar.style.width = width;
-                            bar.style.transition = 'width 1s';
-                        }, 50);
-                    });
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    const progressBars = this.querySelectorAll('.progress-bar');
-                    progressBars.forEach(bar => {
-                        bar.style.width = 0;
-                    });
-                });
-            });
-            
-            // Forzar repintado para navegadores problemáticos
-            setTimeout(() => {
-                trainerCards.forEach(card => {
-                    card.style.transform = 'translateZ(0)';
-                    setTimeout(() => {
-                        card.style.transform = '';
-                    }, 0);
-                });
-            }, 100);
-        });
-    </script>
+    <!-- Script para el efecto flip de entrenadores -->
+    <script src="js/trainer-flip.js"></script>
 </body>
 </html>
