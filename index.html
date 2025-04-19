@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGym - Inicio</title>
+    <link rel="icon" href="images/favico.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles-bootstrap.css">
+</head>
+<body>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="PowerGym Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clases</a>
+                            <div class="dropdown-menu mega-menu w-100">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4>Tipos de Clases</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="clases.html#musculation" class="dropdown-item">Musculación</a></li>
+                                                <li><a href="clases.html#crossfit" class="dropdown-item">CrossFit</a></li>
+                                                <li><a href="clases.html#yoga" class="dropdown-item">Yoga</a></li>
+                                                <li><a href="clases.html#spinning" class="dropdown-item">Spinning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h4>Entrenadores</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="entrenadores.html" class="dropdown-item">Todos los entrenadores</a></li>
+                                                <li><a href="entrenadores.html#elite-trainers" class="dropdown-item">Entrenadores Elite</a></li>
+                                                <li><a href="entrenadores.html#team" class="dropdown-item">Nuestro Equipo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h4>Precios</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="precios.html" class="dropdown-item">Planes</a></li>
+                                                <li><a href="precios.html#ofertas" class="dropdown-item">Ofertas especiales</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="entrenadores.html" class="nav-link">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="theme-toggle ms-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+                            <label class="form-check-label" for="dark-mode-toggle"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay muted loop class="w-100 h-100 object-fit-cover">
+                <source src="videos/video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animated-text">Transforma tu cuerpo, transforma tu vida</h1>
+            <p class="subtitle">Únete a nuestra comunidad fitness hoy mismo</p>
+            <a href="precios.html" class="btn btn-primary btn-lg">Ver planes</a>
+        </div>
+    </section>
+
+    <section class="featured-classes py-5">
+        <div class="container">
+            <h2 class="text-center mb-4"><i class="fas fa-star"></i> Nuestras Clases Destacadas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card class-card h-100">
+                        <div class="card-img-top card-image">
+                            <img src="images/crossfit1.jpg" alt="Clase de CrossFit" class="w-100">
+                            <div class="card-img-overlay card-overlay d-flex align-items-end">
+                                <h3>CrossFit</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fas fa-dumbbell"></i> Entrenamiento de alta intensidad que combina fuerza y resistencia.</p>
+                            <a href="clases.html#crossfit" class="btn btn-outline-primary">Más info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card class-card h-100">
+                        <div class="card-img-top card-image">
+                            <img src="images/yoga1.jpg" alt="Clase de Yoga" class="w-100">
+                            <div class="card-img-overlay card-overlay d-flex align-items-end">
+                                <h3>Yoga</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fas fa-spa"></i> Mejora tu flexibilidad, fuerza y equilibrio con nuestras clases de yoga.</p>
+                            <a href="clases.html#yoga" class="btn btn-outline-primary">Más info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card class-card h-100">
+                        <div class="card-img-top card-image">
+                            <img src="images/spinning1.webp" alt="Clase de Spinning" class="w-100">
+                            <div class="card-img-overlay card-overlay d-flex align-items-end">
+                                <h3>Spinning</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fas fa-bicycle"></i> Quema calorías y mejora tu resistencia cardiovascular con nuestras clases de spinning.</p>
+                            <a href="clases.html#spinning" class="btn btn-outline-primary">Más info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section py-5 text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <i class="fas fa-users fa-2x mb-3"></i>
+                        <div class="counter h2" data-target="500">0</div>
+                        <p>Socios satisfechos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <i class="fas fa-user-tie fa-2x mb-3"></i>
+                        <div class="counter h2" data-target="20">0</div>
+                        <p>Entrenadores certificados</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <i class="fas fa-dumbbell fa-2x mb-3"></i>
+                        <div class="counter h2" data-target="15">0</div>
+                        <p>Clases diferentes</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <i class="fas fa-calendar-alt fa-2x mb-3"></i>
+                        <div class="counter h2" data-target="10">0</div>
+                        <p>Años de experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-4"><i class="fas fa-quote-left"></i> Lo que dicen nuestros socios</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-content">
+                            <p class="lead"><i class="fas fa-quote-right"></i> "Desde que me uní a PowerGym, mi vida ha cambiado completamente. Los entrenadores son increíbles y las instalaciones son de primera."</p>
+                            <div class="testimonial-author text-center">
+                                <img src="images/testimonial1.png" alt="Carlos M." class="rounded-circle mb-2">
+                                <h4>Carlos M.</h4>
+                                <span><i class="fas fa-calendar-check"></i> Miembro desde 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-content">
+                            <p class="lead"><i class="fas fa-quote-right"></i> "Las clases de yoga han mejorado mi flexibilidad y reducido mi estrés. ¡No puedo imaginar mi vida sin PowerGym ahora!"</p>
+                            <div class="testimonial-author text-center">
+                                <img src="images/testimonial1.png" alt="Ana L." class="rounded-circle mb-2">
+                                <h4>Ana L.</h4>
+                                <span><i class="fas fa-calendar-check"></i> Miembro desde 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-content">
+                            <p class="lead"><i class="fas fa-quote-right"></i> "El ambiente en PowerGym es motivador. He logrado mis objetivos fitness gracias al apoyo de los entrenadores y otros miembros."</p>
+                            <div class="testimonial-author text-center">
+                                <img src="images/testimonial1.png" alt="Roberto G." class="rounded-circle mb-2">
+                                <h4>Roberto G.</h4>
+                                <span><i class="fas fa-calendar-check"></i> Miembro desde 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators testimonial-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3>PowerGym</h3>
+                    <p>Transformando vidas a través del fitness desde 2015.</p>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Horario</h3>
+                    <ul class="list-unstyled">
+                        <li>Lunes - Viernes: 6:00 - 22:00</li>
+                        <li>Sábado: 8:00 - 20:00</li>
+                        <li>Domingo: 9:00 - 14:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123, Jujuy</li>
+                        <li><i class="fas fa-phone"></i> +54 388 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@powergym.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas y noticias.</p>
+                    <form class="newsletter-form p-3 rounded" id="newsletterForm">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.715203982529!2d-65.3053882849686!3d-24.18556538438115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sUniversidad%20Nacional%20de%20Jujuy!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="footer-bottom py-3 border-top">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 PowerGym. Todos los derechos reservados. --Edgardo Mamamni</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 text-center text-md-end">
+                            <li class="list-inline-item"><a href="#">Términos y condiciones</a></li>
+                            <li class="list-inline-item"><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container para notificaciones -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Mensaje enviado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-check-circle text-success fa-4x mb-3"></i>
+                    <p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

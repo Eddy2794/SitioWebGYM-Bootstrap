@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Entrenadores | PowerGym</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favico.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles-bootstrap.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="PowerGym Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clases</a>
+                            <div class="dropdown-menu mega-menu w-100">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4>Tipos de Clases</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="clases.html#musculation" class="dropdown-item">Musculación</a></li>
+                                                <li><a href="clases.html#crossfit" class="dropdown-item">CrossFit</a></li>
+                                                <li><a href="clases.html#yoga" class="dropdown-item">Yoga</a></li>
+                                                <li><a href="clases.html#spinning" class="dropdown-item">Spinning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h4>Entrenadores</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="entrenadores.html" class="dropdown-item">Todos los entrenadores</a></li>
+                                                <li><a href="entrenadores.html#elite-trainers" class="dropdown-item">Entrenadores Elite</a></li>
+                                                <li><a href="entrenadores.html#team" class="dropdown-item">Nuestro Equipo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h4>Precios</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="precios.html" class="dropdown-item">Planes</a></li>
+                                                <li><a href="precios.html#ofertas" class="dropdown-item">Ofertas especiales</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="entrenadores.html" class="nav-link active">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="theme-toggle ms-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+                            <label class="form-check-label" for="dark-mode-toggle"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Nuestros Entrenadores</h1>
+            <p class="lead">Conoce a nuestro equipo de profesionales certificados que te guiarán en tu camino al éxito.</p>
+        </div>
+    </section>
+
+    <!-- Sección de entrenadores elite -->
+    <section id="elite-trainers" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Entrenadores Elite</h2>
+            <div class="row">
+                <!-- Entrenador 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer2.webp" alt="Trainer 1" class="rounded-circle">
+                                <h3>Carlos Martínez</h3>
+                                <p class="text-muted mb-2">Especialista en Fitness Funcional</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="small">7+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Carlos Martínez</h3>
+                                <p>Certificaciones: NSCA, ACE</p>
+                                <p>Especializado en entrenamiento funcional y rehabilitación deportiva</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Entrenamiento Funcional</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Rehabilitación</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Nutrición Deportiva</span>
+                                            <span>85%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entrenador 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer1.jpg" alt="Trainer 2" class="rounded-circle">
+                                <h3>Laura Gómez</h3>
+                                <p class="text-muted mb-2">Especialista en Crossfit y HIIT</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="small">5+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Laura Gómez</h3>
+                                <p>Certificaciones: CrossFit L3, NASM</p>
+                                <p>Campeona nacional de CrossFit y especialista en entrenamiento de alta intensidad</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">CrossFit</span>
+                                            <span>98%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">HIIT</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Entrenamiento de Fuerza</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entrenador 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer2.webp" alt="Trainer 3" class="rounded-circle">
+                                <h3>Miguel Rodríguez</h3>
+                                <p class="text-muted mb-2">Especialista en Musculación</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="small">10+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Miguel Rodríguez</h3>
+                                <p>Certificaciones: IFBB Pro, ISSN</p>
+                                <p>Ex competidor profesional de culturismo y especialista en hipertrofia muscular</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Hipertrofia</span>
+                                            <span>99%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Nutrición Deportiva</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Entrenamiento de Fuerza</span>
+                                            <span>97%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de nuestro equipo -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestro Equipo</h2>
+            <div class="row">
+                <!-- Miembro 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer1.jpg" alt="Team Member 1" class="rounded-circle">
+                                <h3>Ana Sánchez</h3>
+                                <p class="text-muted mb-2">Yoga & Pilates</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                                <p class="small">4+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Ana Sánchez</h3>
+                                <p>Certificaciones: Yoga Alliance, PMA</p>
+                                <p>Especialista en yoga restaurativo y pilates terapéutico</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Yoga</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Pilates</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer2.webp" alt="Team Member 2" class="rounded-circle">
+                                <h3>Roberto Díaz</h3>
+                                <p class="text-muted mb-2">Spinning & Cardio</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="small">5+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Roberto Díaz</h3>
+                                <p>Certificaciones: Spinning, ACE</p>
+                                <p>Instructor de spinning y entrenamiento cardiovascular</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Spinning</span>
+                                            <span>98%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Cardio</span>
+                                            <span>92%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer1.jpg" alt="Team Member 3" class="rounded-circle">
+                                <h3>Patricia López</h3>
+                                <p class="text-muted mb-2">Zumba & Baile</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                                <p class="small">3+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Patricia López</h3>
+                                <p>Certificaciones: Zumba, AFAA</p>
+                                <p>Instructora de zumba y baile fitness</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Zumba</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Dance Fitness</span>
+                                            <span>98%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer2.webp" alt="Team Member 4" class="rounded-circle">
+                                <h3>Pedro Morales</h3>
+                                <p class="text-muted mb-2">Boxeo & Artes Marciales</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="small">8+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Pedro Morales</h3>
+                                <p>Certificaciones: Boxing Level 3, Muay Thai</p>
+                                <p>Ex boxeador profesional y entrenador de artes marciales mixtas</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Boxeo</span>
+                                            <span>98%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Artes Marciales</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container py-4">
+            <h2 class="mb-4">¿Listo para comenzar tu transformación?</h2>
+            <p class="lead mb-4">Nuestros entrenadores profesionales están listos para guiarte en tu camino al éxito.</p>
+            <a href="contacto.html" class="btn btn-light btn-lg">Agenda una consulta gratuita</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3>PowerGym</h3>
+                    <p>Transformando vidas a través del fitness desde 2015.</p>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Horario</h3>
+                    <ul class="list-unstyled">
+                        <li>Lunes - Viernes: 6:00 - 22:00</li>
+                        <li>Sábado: 8:00 - 20:00</li>
+                        <li>Domingo: 9:00 - 14:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123, Jujuy</li>
+                        <li><i class="fas fa-phone"></i> +54 388 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@powergym.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas y noticias.</p>
+                    <form class="newsletter-form p-3 rounded" id="newsletterForm">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.715203982529!2d-65.3053882849686!3d-24.18556538438115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sUniversidad%20Nacional%20de%20Jujuy!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="footer-bottom py-3 border-top">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 PowerGym. Todos los derechos reservados. --Edgardo Mamamni</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 text-center text-md-end">
+                            <li class="list-inline-item"><a href="#">Términos y condiciones</a></li>
+                            <li class="list-inline-item"><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container para notificaciones -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Mensaje enviado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-check-circle text-success fa-4x mb-3"></i>
+                    <p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Script adicional para garantizar el efecto flip -->
+    <script>
+        // Script de respaldo para el efecto flip
+        document.addEventListener('DOMContentLoaded', function() {
+            // Asegurarse de que la funcionalidad esté disponible incluso sin jQuery
+            const trainerCards = document.querySelectorAll('.trainer-card');
+            
+            // Función para verificar soporte de transform-style: preserve-3d
+            function supportsPreserve3D() {
+                const el = document.createElement('div');
+                el.style.transformStyle = 'preserve-3d';
+                return el.style.transformStyle === 'preserve-3d';
+            }
+            
+            // Si el navegador no soporta preserve-3d, aplicamos soluciones alternativas
+            if (!supportsPreserve3D()) {
+                document.body.classList.add('no-preserve-3d');
+                // Agregar estilos alternativos para navegadores sin soporte
+                const style = document.createElement('style');
+                style.textContent = `
+                    .no-preserve-3d .trainer-card:hover .trainer-front {
+                        opacity: 0;
+                    }
+                    .no-preserve-3d .trainer-back {
+                        opacity: 0;
+                    }
+                    .no-preserve-3d .trainer-card:hover .trainer-back {
+                        opacity: 1;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            trainerCards.forEach(card => {
+                // Reiniciar animación de barras de progreso al entrar/salir
+                card.addEventListener('mouseenter', function() {
+                    const progressBars = this.querySelectorAll('.progress-bar');
+                    progressBars.forEach(bar => {
+                        const width = bar.getAttribute('aria-valuenow') + '%';
+                        bar.style.width = 0;
+                        setTimeout(() => {
+                            bar.style.width = width;
+                            bar.style.transition = 'width 1s';
+                        }, 50);
+                    });
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    const progressBars = this.querySelectorAll('.progress-bar');
+                    progressBars.forEach(bar => {
+                        bar.style.width = 0;
+                    });
+                });
+            });
+            
+            // Forzar repintado para navegadores problemáticos
+            setTimeout(() => {
+                trainerCards.forEach(card => {
+                    card.style.transform = 'translateZ(0)';
+                    setTimeout(() => {
+                        card.style.transform = '';
+                    }, 0);
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

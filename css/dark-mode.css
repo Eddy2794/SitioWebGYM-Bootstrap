@@ -1,0 +1,137 @@
+/* dark-mode.css - Estilos específicos para el modo oscuro */
+
+:root {
+    --dark-color: #f7fff7;       /* Texto claro en modo oscuro */
+    --light-color: #292f36;      /* Fondo oscuro */
+    --gray-light: #3d3d3d;       /* Gris más oscuro para bordes */
+    --gray-medium: #7a7a7a;      /* Texto secundario */
+    --gray-dark: #b0b0b0;        /* Texto más claro */
+}
+
+/* Elementos que necesitan cambios específicos en modo oscuro */
+.dark-mode body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.dark-mode .header,
+.dark-mode .class-card,
+.dark-mode .testimonial-content,
+.dark-mode .contact-info,
+.dark-mode .plan-card,
+.dark-mode .feature-card,
+.dark-mode .blog-card {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .main-nav a,
+.dark-mode .footer-nav a,
+.dark-mode .blog-card h2 a,
+.dark-mode .meta a {
+    color: white;
+}
+
+.dark-mode .main-nav a:hover,
+.dark-mode .footer-nav a:hover,
+.dark-mode .blog-card h2 a:hover,
+.dark-mode .meta a:hover {
+    color: var(--primary-color);
+}
+
+.dark-mode .card-content p,
+.dark-mode .plan-features p,
+.dark-mode .feature-card p,
+.dark-mode .blog-card p {
+    color: var(--gray-dark);
+}
+
+.dark-mode table {
+    background-color: #1e1e1e;
+}
+
+.dark-mode th {
+    background-color: var(--primary-color);
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #2d2d2d;
+}
+
+.dark-mode td {
+    border-color: #3d3d3d;
+}
+
+.dark-mode .doc-section pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+}
+
+.dark-mode .doc-section code {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+}
+
+.dark-mode .filter-controls label {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+.dark-mode .filter-controls input[type="radio"]:checked + label {
+    background-color: var(--primary-color);
+}
+
+.dark-mode .schedule,
+.dark-mode .pricing-features {
+    background-color: #252525;
+}
+
+.dark-mode .class-filters {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .toggle-label {
+    background-color: var(--gray-medium);
+}
+
+.dark-mode #dark-mode-toggle:checked + .toggle-label {
+    background-color: var(--primary-color);
+}
+
+/* Ajustes para elementos específicos que necesitan más contraste */
+.dark-mode .hero h1,
+.dark-mode .hero .subtitle,
+.dark-mode .page-header h1,
+.dark-mode .page-header p {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .newsletter-box {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .modal-content {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .modal-icon {
+    color: var(--secondary-color);
+}
+
+/* Transiciones suaves para el cambio de modo */
+body,
+.header,
+.class-card,
+.testimonial-content,
+.contact-info,
+.plan-card,
+.feature-card,
+.blog-card,
+.filter-controls label,
+.toggle-label {
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}

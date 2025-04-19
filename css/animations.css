@@ -1,0 +1,93 @@
+/* Animaciones para elementos específicos */
+.animated-text {
+    animation: fadeInUp 1s ease;
+}
+
+/* Contador animado */
+.counter {
+    animation: countUp 2s ease-out forwards;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto hover para tarjetas */
+.class-card:hover .card-image img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* Transiciones para el carrusel de testimonios */
+.testimonial-slide {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animación para el spinner de carga */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* Animación para el modo oscuro */
+body, .header, .class-card, .testimonial-content, .contact-info, .plan-card, .feature-card, .blog-card {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Animación para barras de habilidades */
+@keyframes fillBar {
+    from { width: 0%; }
+    to { width: var(--skill-value); }
+}
+
+/* Animaciones de fadeup */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animaciones para comentarios */
+.comentario {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Retraso escalonado para comentarios */
+.comentario:nth-child(1) { animation-delay: 0.1s; }
+.comentario:nth-child(2) { animation-delay: 0.2s; }
+.comentario:nth-child(3) { animation-delay: 0.3s; }
+.comentario:nth-child(4) { animation-delay: 0.4s; }

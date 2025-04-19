@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGym - Documentación Técnica</title>
+    <link rel="icon" href="images/favico.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles-bootstrap.css">
+</head>
+<body>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="PowerGym Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clases</a>
+                            <div class="dropdown-menu mega-menu w-100">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4>Tipos de Clases</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="clases.html#musculacion" class="dropdown-item">Musculación</a></li>
+                                                <li><a href="clases.html#crossfit" class="dropdown-item">CrossFit</a></li>
+                                                <li><a href="clases.html#yoga" class="dropdown-item">Yoga</a></li>
+                                                <li><a href="clases.html#spinning" class="dropdown-item">Spinning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h4>Entrenadores</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="entrenadores.html" class="dropdown-item">Todos los entrenadores</a></li>
+                                                <li><a href="entrenadores.html#elite-trainers" class="dropdown-item">Entrenadores Elite</a></li>
+                                                <li><a href="entrenadores.html#team" class="dropdown-item">Nuestro Equipo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h4>Precios</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="precios.html" class="dropdown-item">Planes</a></li>
+                                                <li><a href="precios.html#ofertas" class="dropdown-item">Ofertas especiales</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="entrenadores.html" class="nav-link">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="theme-toggle ms-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+                            <label class="form-check-label" for="dark-mode-toggle"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="documentation-page">
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold">Documentación Técnica</h1>
+                <p class="lead">Detalles sobre el diseño y desarrollo del sitio web PowerGym.</p>
+            </div>
+        </section>
+        
+        <section class="documentation-content py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <article class="doc-section mb-5">
+                            <h2 class="border-bottom pb-2 mb-3">1. Estructura y Organización</h2>
+                            <p>El sitio web de PowerGym fue desarrollado siguiendo los principios de HTML5 semántico y CSS3 moderno. La estructura del proyecto está organizada de la siguiente manera:</p>
+                            
+                            <h3 class="mt-4 mb-3">1.1 Arquitectura de archivos</h3>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><strong>HTML:</strong> Cada página principal del sitio tiene su propio archivo HTML para facilitar el mantenimiento.</li>
+                                <li class="list-group-item"><strong>CSS:</strong> Los estilos están divididos en tres archivos principales: styles-bootstrap.css (estilos adaptados a Bootstrap), dark-mode.css (modo oscuro) y animations.css (animaciones y keyframes).</li>
+                                <li class="list-group-item"><strong>JavaScript:</strong> Se utiliza main.js para las funcionalidades principales como el modo oscuro, contadores y elementos dinámicos.</li>
+                                <li class="list-group-item"><strong>Assets:</strong> Las imágenes y videos están organizados en carpetas separadas para una mejor gestión.</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">1.2 Estructura semántica HTML5 con Bootstrap</h3>
+                            <p>Se utilizaron las siguientes etiquetas semánticas combinadas con clases de Bootstrap:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><code>&lt;header&gt;</code> con <code>navbar</code> para la cabecera del sitio</li>
+                                <li class="list-group-item"><code>&lt;nav&gt;</code> con clases <code>navbar-*</code> para la navegación principal</li>
+                                <li class="list-group-item"><code>&lt;main&gt;</code> para el contenido principal de cada página</li>
+                                <li class="list-group-item"><code>&lt;section&gt;</code> con espaciados <code>py-*</code> para agrupar contenido temático</li>
+                                <li class="list-group-item"><code>&lt;article&gt;</code> con <code>card</code> para entradas de blog y contenido independiente</li>
+                                <li class="list-group-item"><code>&lt;footer&gt;</code> para el pie de página con sistema grid de Bootstrap</li>
+                            </ul>
+                        </article>
+                        
+                        <article class="doc-section mb-5">
+                            <h2 class="border-bottom pb-2 mb-3">2. Diseño Responsivo con Bootstrap</h2>
+                            <p>El sitio fue rediseñado para aprovechar el sistema de rejilla de Bootstrap:</p>
+                            
+                            <h3 class="mt-4 mb-3">2.1 Sistema de Grid</h3>
+                            <p>Se utilizó el sistema de rejilla de 12 columnas de Bootstrap para crear layouts responsivos:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><code>col-12</code> para ocupar todo el ancho en móviles</li>
+                                <li class="list-group-item"><code>col-md-6</code> para dos columnas en tablets</li>
+                                <li class="list-group-item"><code>col-lg-4</code> para tres columnas en escritorios</li>
+                                <li class="list-group-item"><code>col-xl-3</code> para cuatro columnas en pantallas grandes</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">2.2 Componentes Responsivos</h3>
+                            <p>Se implementaron componentes adaptables de Bootstrap:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><strong>Navbar Responsive:</strong> Colapsa en un botón de hamburguesa en dispositivos pequeños.</li>
+                                <li class="list-group-item"><strong>Cards:</strong> Para mostrar información de clases, entrenadores y planes.</li>
+                                <li class="list-group-item"><strong>Carousel:</strong> Para mostrar testimonios y destacados.</li>
+                                <li class="list-group-item"><strong>Tablas Responsivas:</strong> Con <code>table-responsive</code> para horarios de clases.</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">2.3 Utilidades de Bootstrap</h3>
+                            <p>Se aprovecharon múltiples utilidades:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><code>d-flex</code> y <code>flex-*</code> para layout flexible</li>
+                                <li class="list-group-item"><code>gap-*</code> para espaciado entre elementos</li>
+                                <li class="list-group-item"><code>py-*, px-*, m-*</code> para espaciados consistentes</li>
+                                <li class="list-group-item"><code>text-center/start/end</code> para alineación responsiva de texto</li>
+                            </ul>
+                        </article>
+                        
+                        <article class="doc-section mb-5">
+                            <h2 class="border-bottom pb-2 mb-3">3. Integración con Bootstrap</h2>
+                            
+                            <h3 class="mt-4 mb-3">3.1 Personalización de Bootstrap</h3>
+                            <p>Se personalizó el aspecto de Bootstrap mediante:</p>
+                            <div class="bg-light p-3 mb-3 rounded">
+                                <pre class="mb-0"><code>:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --dark-color: #292f36;
+    --light-color: #f7fff7;
+    --bs-primary: var(--primary-color);
+    --bs-primary-rgb: 255, 107, 107;
+}</code></pre>
+                            </div>
+                            
+                            <h3 class="mt-4 mb-3">3.2 Componentes Adaptados</h3>
+                            <p>Se adaptaron varios componentes:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><strong>Navbar:</strong> Personalizado con mega-menú y toggle para modo oscuro</li>
+                                <li class="list-group-item"><strong>Cards:</strong> Con efectos hover y overlay para imágenes</li>
+                                <li class="list-group-item"><strong>Formularios:</strong> Con validación y feedback visual</li>
+                                <li class="list-group-item"><strong>Progress bars:</strong> Para mostrar habilidades de entrenadores</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">3.3 JavaScript de Bootstrap</h3>
+                            <p>Se integraron varios plugins de JavaScript:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><strong>Tooltips:</strong> Para proporcionar información adicional</li>
+                                <li class="list-group-item"><strong>Modal:</strong> Para confirmaciones y galería de imágenes</li>
+                                <li class="list-group-item"><strong>Toasts:</strong> Para notificaciones de acciones completadas</li>
+                                <li class="list-group-item"><strong>Collapse:</strong> Para menús acordeón y contenido expandible</li>
+                            </ul>
+                        </article>
+                        
+                        <article class="doc-section mb-5">
+                            <h2 class="border-bottom pb-2 mb-3">4. Accesibilidad</h2>
+                            <p>El sitio fue desarrollado siguiendo las pautas WCAG 2.1 AA:</p>
+                            
+                            <h3 class="mt-4 mb-3">4.1 Contraste de color</h3>
+                            <p>Todos los textos tienen un ratio de contraste mínimo de 4.5:1 respecto a su fondo.</p>
+                            
+                            <h3 class="mt-4 mb-3">4.2 Navegación con teclado</h3>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">Estilos focus visibles para todos los elementos interactivos</li>
+                                <li class="list-group-item">Orden lógico de tabulación</li>
+                                <li class="list-group-item">Atajos de teclado para navegación principal</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">4.3 ARIA</h3>
+                            <p>Se utilizaron atributos ARIA para mejorar la accesibilidad:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><code>aria-label</code> para botones sin texto</li>
+                                <li class="list-group-item"><code>aria-expanded</code> para menús desplegables</li>
+                                <li class="list-group-item"><code>aria-live</code> para áreas de contenido dinámico</li>
+                                <li class="list-group-item"><code>role</code> para elementos como banners y diálogos</li>
+                            </ul>
+                        </article>
+                        
+                        <article class="doc-section mb-5">
+                            <h2 class="border-bottom pb-2 mb-3">5. Desafíos y Soluciones</h2>
+                            
+                            <h3 class="mt-4 mb-3">5.1 Migración a Bootstrap</h3>
+                            <p>El principal desafío fue migrar de CSS puro a Bootstrap manteniendo la experiencia de usuario:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">Se adaptaron los componentes personalizados a equivalentes de Bootstrap</li>
+                                <li class="list-group-item">Se mantuvo la personalización visual mediante CSS custom encima de Bootstrap</li>
+                                <li class="list-group-item">Se adaptaron las animaciones para funcionar con la estructura de Bootstrap</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">5.2 Integración de JavaScript</h3>
+                            <p>Se adaptó el código JavaScript para:</p>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">Usar jQuery para selección y manipulación de elementos</li>
+                                <li class="list-group-item">Integrar los plugins de Bootstrap como modales y tooltips</li>
+                                <li class="list-group-item">Mantener la funcionalidad del tema oscuro</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3>PowerGym</h3>
+                    <p>Transformando vidas a través del fitness desde 2015.</p>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Horario</h3>
+                    <ul class="list-unstyled">
+                        <li>Lunes - Viernes: 6:00 - 22:00</li>
+                        <li>Sábado: 8:00 - 20:00</li>
+                        <li>Domingo: 9:00 - 14:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123, Jujuy</li>
+                        <li><i class="fas fa-phone"></i> +54 388 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@powergym.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas y noticias.</p>
+                    <form class="newsletter-form p-3 rounded" id="newsletterForm">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.715203982529!2d-65.3053882849686!3d-24.18556538438115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sUniversidad%20Nacional%20de%20Jujuy!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="footer-bottom py-3 border-top">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 PowerGym. Todos los derechos reservados. --Edgardo Mamamni</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 text-center text-md-end">
+                            <li class="list-inline-item"><a href="#">Términos y condiciones</a></li>
+                            <li class="list-inline-item"><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container para notificaciones -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
