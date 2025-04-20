@@ -120,7 +120,7 @@ Las tarjetas de entrenadores utilizan un efecto flip 3D avanzado implementado co
 
 ## Optimización para rendimiento
 
-- Uso de imágenes WebP donde es posible
+- Uso de imágenes WebP
 - Carga diferida de recursos no críticos
 - Minimización de peticiones HTTP
 - Animaciones optimizadas con GPU acceleration
