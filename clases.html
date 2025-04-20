@@ -14,27 +14,33 @@
     <link rel="stylesheet" href="css/styles-bootstrap.css">
 </head>
 <body>
+    <!-- ======= HEADER Y NAVEGACIÓN ======= -->
     <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+                <!-- Logo del sitio -->
                 <a href="index.html" class="navbar-brand">
                     <img src="images/logo.png" alt="PowerGym Logo">
                 </a>
                 
+                <!-- Botón hamburguesa para móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
+                <!-- Menú de navegación principal -->
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Inicio</a>
                         </li>
+                        <!-- Mega menú desplegable para clases -->
                         <li class="nav-item dropdown position-static">
                             <a href="clases.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Clases</a>
                             <div class="dropdown-menu mega-menu w-100">
                                 <div class="container">
                                     <div class="row">
+                                        <!-- Columna 1: Tipos de clases -->
                                         <div class="col-md-4">
                                             <h4>Tipos de Clases</h4>
                                             <ul class="list-unstyled">
@@ -44,6 +50,7 @@
                                                 <li><a href="clases.html#spinning" class="dropdown-item">Spinning</a></li>
                                             </ul>
                                         </div>
+                                        <!-- Columna 2: Enlaces a entrenadores -->
                                         <div class="col-md-4">
                                             <h4>Entrenadores</h4>
                                             <ul class="list-unstyled">
@@ -52,6 +59,7 @@
                                                 <li><a href="entrenadores.html#team" class="dropdown-item">Nuestro Equipo</a></li>
                                             </ul>
                                         </div>
+                                        <!-- Columna 3: Enlaces a precios -->
                                         <div class="col-md-4">
                                             <h4>Precios</h4>
                                             <ul class="list-unstyled">
@@ -77,6 +85,7 @@
                         </li>
                     </ul>
                     
+                    <!-- Selector de tema claro/oscuro -->
                     <div class="theme-toggle ms-3">
                         <div class="form-check form-switch position-relative">
                             <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
@@ -90,40 +99,54 @@
             </div>
         </nav>
     </header>
+    <!-- ======= FIN HEADER Y NAVEGACIÓN ======= -->
 
+    <!-- ======= CONTENIDO PRINCIPAL ======= -->
     <main class="classes-page">
+        <!-- ======= CABECERA DE PÁGINA ======= -->
         <section class="page-header">
             <div class="container">
                 <h1>Nuestras Clases</h1>
                 <p>Ofrecemos una variedad de clases para todos los niveles y objetivos.</p>
             </div>
         </section>
+        <!-- ======= FIN CABECERA DE PÁGINA ======= -->
         
+        <!-- ======= FILTROS DE CLASES ======= -->
+        <!-- Sistema de filtrado con radio buttons personalizados -->
         <section class="class-filters py-3">
             <div class="container">
                 <div class="filter-controls d-flex justify-content-center flex-wrap gap-2">
+                    <!-- Filtro para todas las clases -->
                     <input type="radio" id="all" name="filter" value="all" class="clase-filter" checked>
                     <label for="all" class="btn btn-outline-secondary">Todas</label>
                     
+                    <!-- Filtro para clases de musculación -->
                     <input type="radio" id="musculacion" name="filter" value="musculacion" class="clase-filter">
                     <label for="musculacion" class="btn btn-outline-secondary">Musculación</label>
                     
+                    <!-- Filtro para clases de crossfit -->
                     <input type="radio" id="crossfit" name="filter" value="crossfit" class="clase-filter">
                     <label for="crossfit" class="btn btn-outline-secondary">CrossFit</label>
                     
+                    <!-- Filtro para clases de yoga -->
                     <input type="radio" id="yoga" name="filter" value="yoga" class="clase-filter">
                     <label for="yoga" class="btn btn-outline-secondary">Yoga</label>
                     
+                    <!-- Filtro para clases de spinning -->
                     <input type="radio" id="spinning" name="filter" value="spinning" class="clase-filter">
                     <label for="spinning" class="btn btn-outline-secondary">Spinning</label>
                 </div>
             </div>
         </section>
+        <!-- ======= FIN FILTROS DE CLASES ======= -->
         
+        <!-- ======= GALERÍA DE CLASES ======= -->
+        <!-- Implementación de grid con masonry para mostrar tarjetas de clases -->
         <section class="classes-gallery py-5">
             <div class="container">
                 <div class="row g-4" id="clases-container">
-                    <!-- Musculación -->
+                    <!-- Tarjeta de clase: Musculación -->
                     <div class="col-md-6 col-lg-4 masonry-item musculacion">
                         <div class="card class-card h-100">
                             <div class="card-img-top card-image">
@@ -142,7 +165,7 @@
                         </div>
                     </div>
                     
-                    <!-- CrossFit -->
+                    <!-- Tarjeta de clase: CrossFit -->
                     <div class="col-md-6 col-lg-4 masonry-item crossfit">
                         <div class="card class-card h-100">
                             <div class="card-img-top card-image">
@@ -161,7 +184,7 @@
                         </div>
                     </div>
                     
-                    <!-- Yoga -->
+                    <!-- Tarjeta de clase: Yoga -->
                     <div class="col-md-6 col-lg-4 masonry-item yoga">
                         <div class="card class-card h-100">
                             <div class="card-img-top card-image">
@@ -180,7 +203,7 @@
                         </div>
                     </div>
                     
-                    <!-- Spinning -->
+                    <!-- Tarjeta de clase: Spinning -->
                     <div class="col-md-6 col-lg-4 masonry-item spinning">
                         <div class="card class-card h-100">
                             <div class="card-img-top card-image">
@@ -198,12 +221,13 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Más clases... -->
                 </div>
             </div>
         </section>
+        <!-- ======= FIN GALERÍA DE CLASES ======= -->
         
+        <!-- ======= HORARIO SEMANAL ======= -->
+        <!-- Tabla de horarios con diseño responsivo -->
         <section class="schedule py-5 bg-light">
             <div class="container">
                 <h2 class="text-center mb-4">Horario Semanal</h2>
@@ -221,6 +245,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Horarios de mañana -->
                             <tr>
                                 <td>07:00 - 08:00</td>
                                 <td>CrossFit</td>
@@ -248,6 +273,7 @@
                                 <td>Musculación</td>
                                 <td>Spinning</td>
                             </tr>
+                            <!-- Horarios de tarde -->
                             <tr>
                                 <td>17:00 - 18:00</td>
                                 <td>Spinning</td>
@@ -271,11 +297,16 @@
                 </div>
             </div>
         </section>
+        <!-- ======= FIN HORARIO SEMANAL ======= -->
     </main>
+    <!-- ======= FIN CONTENIDO PRINCIPAL ======= -->
 
+    <!-- ======= FOOTER ======= -->
     <footer class="footer pt-5">
         <div class="container">
+            <!-- Información principal del footer -->
             <div class="row g-4 mb-4">
+                <!-- Columna 1: Información del gimnasio y redes sociales -->
                 <div class="col-lg-3 col-md-6">
                     <h3>PowerGym</h3>
                     <p>Transformando vidas a través del fitness desde 2015.</p>
@@ -286,6 +317,7 @@
                         <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                <!-- Columna 2: Horarios de apertura -->
                 <div class="col-lg-3 col-md-6">
                     <h3>Horario</h3>
                     <ul class="list-unstyled">
@@ -294,6 +326,7 @@
                         <li>Domingo: 9:00 - 14:00</li>
                     </ul>
                 </div>
+                <!-- Columna 3: Información de contacto -->
                 <div class="col-lg-3 col-md-6">
                     <h3>Contacto</h3>
                     <ul class="list-unstyled">
@@ -302,6 +335,7 @@
                         <li><i class="fas fa-envelope"></i> info@powergym.com</li>
                     </ul>
                 </div>
+                <!-- Columna 4: Formulario de newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <h3>Newsletter</h3>
                     <p>Suscríbete para recibir ofertas y noticias.</p>
@@ -313,9 +347,11 @@
                     </form>
                 </div>
             </div>
+            <!-- Mapa de ubicación -->
             <div class="map-container mb-4">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.715203982529!2d-65.3053882849686!3d-24.18556538438115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sUniversidad%20Nacional%20de%20Jujuy!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+            <!-- Copyright y enlaces legales -->
             <div class="footer-bottom py-3 border-top">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
@@ -331,10 +367,14 @@
             </div>
         </div>
     </footer>
+    <!-- ======= FIN FOOTER ======= -->
 
-    <!-- Toast Container para notificaciones -->
+    <!-- ======= COMPONENTES ADICIONALES ======= -->
+    <!-- Contenedor para notificaciones toast -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+    <!-- ======= FIN COMPONENTES ADICIONALES ======= -->
 
+    <!-- ======= SCRIPTS ======= -->
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
@@ -342,7 +382,7 @@
     <!-- Custom scripts -->
     <script src="js/main.js"></script>
     
-    <!-- Script para filtros de clases -->
+    <!-- Script para filtros de clases con efectos visuales -->
     <script>
         $(document).ready(function() {
             // Filtrado de clases
@@ -388,5 +428,6 @@
             }
         });
     </script>
+    <!-- ======= FIN SCRIPTS ======= -->
 </body>
 </html>

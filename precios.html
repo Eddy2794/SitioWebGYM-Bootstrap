@@ -14,27 +14,33 @@
     <link rel="stylesheet" href="css/styles-bootstrap.css">
 </head>
 <body>
+    <!-- ======= HEADER Y NAVEGACIÓN ======= -->
     <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+                <!-- Logo del sitio -->
                 <a href="index.html" class="navbar-brand">
                     <img src="images/logo.png" alt="PowerGym Logo">
                 </a>
                 
+                <!-- Botón hamburguesa para móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
+                <!-- Menú de navegación principal -->
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Inicio</a>
                         </li>
+                        <!-- Mega menú desplegable para clases -->
                         <li class="nav-item dropdown position-static">
                             <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clases</a>
                             <div class="dropdown-menu mega-menu w-100">
                                 <div class="container">
                                     <div class="row">
+                                        <!-- Columna 1: Tipos de clases -->
                                         <div class="col-md-4">
                                             <h4>Tipos de Clases</h4>
                                             <ul class="list-unstyled">
@@ -44,6 +50,7 @@
                                                 <li><a href="clases.html#spinning" class="dropdown-item">Spinning</a></li>
                                             </ul>
                                         </div>
+                                        <!-- Columna 2: Enlaces a entrenadores -->
                                         <div class="col-md-4">
                                             <h4>Entrenadores</h4>
                                             <ul class="list-unstyled">
@@ -52,6 +59,7 @@
                                                 <li><a href="entrenadores.html#team" class="dropdown-item">Nuestro Equipo</a></li>
                                             </ul>
                                         </div>
+                                        <!-- Columna 3: Enlaces a precios -->
                                         <div class="col-md-4">
                                             <h4>Precios</h4>
                                             <ul class="list-unstyled">
@@ -77,6 +85,7 @@
                         </li>
                     </ul>
                     
+                    <!-- Selector de tema claro/oscuro -->
                     <div class="theme-toggle ms-3">
                         <div class="form-check form-switch position-relative">
                             <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
@@ -90,19 +99,26 @@
             </div>
         </nav>
     </header>
+    <!-- ======= FIN HEADER Y NAVEGACIÓN ======= -->
 
+    <!-- ======= CONTENIDO PRINCIPAL ======= -->
     <main class="pricing-page">
+        <!-- ======= BANNER PRINCIPAL ======= -->
         <section class="py-5 bg-primary text-white text-center">
             <div class="container py-5">
                 <h1 class="display-4 fw-bold">Nuestros Planes</h1>
                 <p class="lead">Elige el plan que mejor se adapte a tus necesidades.</p>
             </div>
         </section>
+        <!-- ======= FIN BANNER PRINCIPAL ======= -->
         
+        <!-- ======= TOGGLE DE FACTURACIÓN ======= -->
+        <!-- Permite alternar entre precios mensuales y anuales -->
         <section class="pricing-toggle py-4">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center gap-3">
                     <span>Mensual</span>
+                    <!-- Switch para alternar entre opciones de facturación -->
                     <div class="form-check form-switch m-0">
                         <input class="form-check-input" type="checkbox" id="billingToggle" style="width: 3rem; height: 1.5rem;">
                     </div>
@@ -110,19 +126,26 @@
                 </div>
             </div>
         </section>
+        <!-- ======= FIN TOGGLE DE FACTURACIÓN ======= -->
         
+        <!-- ======= TARJETAS DE PLANES ======= -->
+        <!-- Muestra las diferentes opciones de membresía disponibles -->
         <section class="pricing-plans py-5">
             <div class="container">
                 <div class="row g-4">
+                    <!-- Plan Básico -->
                     <div class="col-md-4">
                         <div class="card plan-card h-100">
                             <div class="card-header text-center border-bottom-0 pt-4">
                                 <h3>Básico</h3>
+                                <!-- Precio mensual (visible por defecto) -->
                                 <div class="price monthly h2">$1,500<span class="text-muted fs-6">/mes</span></div>
+                                <!-- Precio anual (oculto inicialmente) -->
                                 <div class="price annually h2 d-none">$1,200<span class="text-muted fs-6">/mes</span></div>
                                 <p class="text-muted">Ideal para empezar</p>
                             </div>
                             <div class="card-body">
+                                <!-- Listado de características del plan -->
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Acceso a zona de musculación</li>
                                     <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 2 clases grupales por semana</li>
@@ -138,16 +161,21 @@
                         </div>
                     </div>
                     
+                    <!-- Plan Estándar (destacado) -->
                     <div class="col-md-4">
                         <div class="card plan-card h-100 border-primary">
                             <div class="card-header text-center border-bottom-0 pt-4 position-relative">
+                                <!-- Badge de plan más popular -->
                                 <span class="position-absolute top-0 start-50 translate-middle badge bg-primary px-3 py-2 rounded-pill">Más popular</span>
                                 <h3>Estándar</h3>
+                                <!-- Precio mensual (visible por defecto) -->
                                 <div class="price monthly h2">$2,500<span class="text-muted fs-6">/mes</span></div>
+                                <!-- Precio anual (oculto inicialmente) -->
                                 <div class="price annually h2 d-none">$2,000<span class="text-muted fs-6">/mes</span></div>
                                 <p class="text-muted">El equilibrio perfecto</p>
                             </div>
                             <div class="card-body">
+                                <!-- Listado de características del plan -->
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Acceso a zona de musculación</li>
                                     <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Clases grupales ilimitadas</li>
@@ -163,15 +191,19 @@
                         </div>
                     </div>
                     
+                    <!-- Plan Premium -->
                     <div class="col-md-4">
                         <div class="card plan-card h-100">
                             <div class="card-header text-center border-bottom-0 pt-4">
                                 <h3>Premium</h3>
+                                <!-- Precio mensual (visible por defecto) -->
                                 <div class="price monthly h2">$4,000<span class="text-muted fs-6">/mes</span></div>
+                                <!-- Precio anual (oculto inicialmente) -->
                                 <div class="price annually h2 d-none">$3,200<span class="text-muted fs-6">/mes</span></div>
                                 <p class="text-muted">Experiencia completa</p>
                             </div>
                             <div class="card-body">
+                                <!-- Listado de características del plan -->
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Acceso a todas las áreas</li>
                                     <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Clases ilimitadas</li>
@@ -189,11 +221,15 @@
                 </div>
             </div>
         </section>
+        <!-- ======= FIN TARJETAS DE PLANES ======= -->
         
+        <!-- ======= BENEFICIOS ADICIONALES ======= -->
+        <!-- Sección de beneficios y descuentos especiales -->
         <section class="pricing-features py-5 bg-light" id="ofertas">
             <div class="container">
                 <h2 class="text-center mb-4">Beneficios adicionales</h2>
                 <div class="row g-4">
+                    <!-- Beneficio 1: Plan familiar -->
                     <div class="col-md-4">
                         <div class="card feature-card h-100 text-center">
                             <div class="card-body">
@@ -203,6 +239,7 @@
                                 <h3>Plan familiar</h3>
                                 <p>15% de descuento para grupos de 3 o más personas.</p>
                                 <div class="mt-3">
+                                    <!-- Tooltip con información adicional -->
                                     <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Aplica para miembros de la misma familia">
                                         <i class="fas fa-info-circle me-1"></i> Más info
                                     </span>
@@ -211,6 +248,7 @@
                         </div>
                     </div>
                     
+                    <!-- Beneficio 2: Descuento para estudiantes -->
                     <div class="col-md-4">
                         <div class="card feature-card h-100 text-center">
                             <div class="card-body">
@@ -220,6 +258,7 @@
                                 <h3>Estudiantes</h3>
                                 <p>20% de descuento presentando credencial estudiantil.</p>
                                 <div class="mt-3">
+                                    <!-- Tooltip con información adicional -->
                                     <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Válido para estudiantes de tiempo completo">
                                         <i class="fas fa-info-circle me-1"></i> Más info
                                     </span>
@@ -228,6 +267,7 @@
                         </div>
                     </div>
                     
+                    <!-- Beneficio 3: Convenios corporativos -->
                     <div class="col-md-4">
                         <div class="card feature-card h-100 text-center">
                             <div class="card-body">
@@ -237,6 +277,7 @@
                                 <h3>Convenios</h3>
                                 <p>Descuentos especiales para empleados de empresas asociadas.</p>
                                 <div class="mt-3">
+                                    <!-- Tooltip con información adicional -->
                                     <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Consulta con tu empleador">
                                         <i class="fas fa-info-circle me-1"></i> Más info
                                     </span>
@@ -247,10 +288,14 @@
                 </div>
             </div>
         </section>
+        <!-- ======= FIN BENEFICIOS ADICIONALES ======= -->
     </main>
+    <!-- ======= FIN CONTENIDO PRINCIPAL ======= -->
 
+    <!-- ======= FOOTER ======= -->
     <footer class="footer pt-5">
         <div class="container">
+            <!-- Información principal del footer -->
             <div class="row g-4 mb-4">
                 <div class="col-lg-3 col-md-6">
                     <h3>PowerGym</h3>
@@ -289,9 +334,11 @@
                     </form>
                 </div>
             </div>
+            <!-- Mapa de ubicación -->
             <div class="map-container mb-4">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.715203982529!2d-65.3053882849686!3d-24.18556538438115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sUniversidad%20Nacional%20de%20Jujuy!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+            <!-- Copyright y enlaces legales -->
             <div class="footer-bottom py-3 border-top">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
@@ -307,35 +354,43 @@
             </div>
         </div>
     </footer>
+    <!-- ======= FIN FOOTER ======= -->
 
-    <!-- Toast Container para notificaciones -->
+    <!-- ======= COMPONENTES MODALES Y TOASTS ======= -->
+    <!-- Contenedor para notificaciones toast -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+    <!-- ======= FIN COMPONENTES MODALES Y TOASTS ======= -->
 
+    <!-- ======= SCRIPTS ======= -->
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Custom scripts -->
     <script src="js/main.js"></script>
+    <!-- Script específico para la página de precios -->
     <script>
         $(document).ready(function() {
-            // Alternar entre precios mensuales y anuales
+            // Alternar entre precios mensuales y anuales cuando se cambia el toggle
             $('#billingToggle').on('change', function() {
                 if ($(this).is(':checked')) {
+                    // Mostrar precios anuales
                     $('.price.monthly').addClass('d-none');
                     $('.price.annually').removeClass('d-none');
                 } else {
+                    // Mostrar precios mensuales
                     $('.price.monthly').removeClass('d-none');
                     $('.price.annually').addClass('d-none');
                 }
             });
             
-            // Inicializar tooltips
+            // Inicializar tooltips para los beneficios adicionales
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl)
             });
         });
     </script>
+    <!-- ======= FIN SCRIPTS ======= -->
 </body>
 </html>

@@ -17,28 +17,33 @@
     <link rel="stylesheet" href="css/styles-bootstrap.css">
 </head>
 <body>
-    <!-- Header y Navegación -->
+    <!-- ======= HEADER Y NAVEGACIÓN ======= -->
     <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+                <!-- Logo del sitio -->
                 <a href="index.html" class="navbar-brand">
                     <img src="images/logo.png" alt="PowerGym Logo">
                 </a>
                 
+                <!-- Botón hamburguesa para móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
+                <!-- Menú de navegación principal -->
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Inicio</a>
                         </li>
+                        <!-- Mega menú desplegable para clases -->
                         <li class="nav-item dropdown position-static">
                             <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clases</a>
                             <div class="dropdown-menu mega-menu w-100">
                                 <div class="container">
                                     <div class="row">
+                                        <!-- Columna 1: Tipos de clases -->
                                         <div class="col-md-4">
                                             <h4>Tipos de Clases</h4>
                                             <ul class="list-unstyled">
@@ -48,6 +53,7 @@
                                                 <li><a href="clases.html#spinning" class="dropdown-item">Spinning</a></li>
                                             </ul>
                                         </div>
+                                        <!-- Columna 2: Enlaces a entrenadores -->
                                         <div class="col-md-4">
                                             <h4>Entrenadores</h4>
                                             <ul class="list-unstyled">
@@ -56,6 +62,7 @@
                                                 <li><a href="entrenadores.html#team" class="dropdown-item">Nuestro Equipo</a></li>
                                             </ul>
                                         </div>
+                                        <!-- Columna 3: Enlaces a precios -->
                                         <div class="col-md-4">
                                             <h4>Precios</h4>
                                             <ul class="list-unstyled">
@@ -81,6 +88,7 @@
                         </li>
                     </ul>
                     
+                    <!-- Selector de tema claro/oscuro -->
                     <div class="theme-toggle ms-3">
                         <div class="form-check form-switch position-relative">
                             <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
@@ -94,24 +102,30 @@
             </div>
         </nav>
     </header>
+    <!-- ======= FIN HEADER Y NAVEGACIÓN ======= -->
 
-    <!-- Banner principal -->
+    <!-- ======= BANNER PRINCIPAL ======= -->
     <section class="py-5 bg-primary text-white text-center">
         <div class="container py-5">
             <h1 class="display-4 fw-bold">Nuestros Entrenadores</h1>
             <p class="lead">Conoce a nuestro equipo de profesionales certificados que te guiarán en tu camino al éxito.</p>
         </div>
     </section>
+    <!-- ======= FIN BANNER PRINCIPAL ======= -->
 
-    <!-- Sección de entrenadores elite -->
+    <!-- ======= SECCIÓN ENTRENADORES ELITE ======= -->
+    <!-- Esta sección muestra los entrenadores principales con tarjetas flip 3D -->
     <section id="elite-trainers" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Entrenadores Elite</h2>
             <div class="row">
-                <!-- Entrenador 1 -->
+                <!-- ======= TARJETA DE ENTRENADOR 1 ======= -->
+                <!-- Estructura base de la tarjeta con efecto flip -->
                 <div class="col-md-6 col-lg-4">
                     <div class="trainer-card">
+                        <!-- Contenedor interno para la rotación 3D -->
                         <div class="trainer-inner">
+                            <!-- Parte frontal de la tarjeta (visible inicialmente) -->
                             <div class="trainer-front">
                                 <img src="images/trainer2.webp" alt="Trainer 1" class="rounded-circle">
                                 <h3>Carlos Martínez</h3>
@@ -125,10 +139,12 @@
                                 </div>
                                 <p class="small">7+ años de experiencia</p>
                             </div>
+                            <!-- Parte trasera de la tarjeta (se muestra al hacer hover/clic) -->
                             <div class="trainer-back">
                                 <h3>Carlos Martínez</h3>
                                 <p>Certificaciones: NSCA, ACE</p>
                                 <p>Especializado en entrenamiento funcional y rehabilitación deportiva</p>
+                                <!-- Barras de progreso para mostrar habilidades -->
                                 <div class="skills">
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between mb-1">
@@ -162,8 +178,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- ======= FIN TARJETA DE ENTRENADOR 1 ======= -->
                 
-                <!-- Entrenador 2 -->
+                <!-- ======= TARJETA DE ENTRENADOR 2 ======= -->
                 <div class="col-md-6 col-lg-4">
                     <div class="trainer-card">
                         <div class="trainer-inner">
@@ -217,8 +234,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- ======= FIN TARJETA DE ENTRENADOR 2 ======= -->
                 
-                <!-- Entrenador 3 -->
+                <!-- ======= TARJETA DE ENTRENADOR 3 ======= -->
                 <div class="col-md-6 col-lg-4">
                     <div class="trainer-card">
                         <div class="trainer-inner">
@@ -272,16 +290,19 @@
                         </div>
                     </div>
                 </div>
+                <!-- ======= FIN TARJETA DE ENTRENADOR 3 ======= -->
             </div>
         </div>
     </section>
+    <!-- ======= FIN SECCIÓN ENTRENADORES ELITE ======= -->
 
-    <!-- Sección de nuestro equipo -->
+    <!-- ======= SECCIÓN DE EQUIPO ======= -->
+    <!-- Esta sección muestra miembros adicionales del equipo -->
     <section id="team" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Nuestro Equipo</h2>
             <div class="row">
-                <!-- Miembro 1 -->
+                <!-- Miembro 1 del equipo -->
                 <div class="col-md-6 col-lg-3">
                     <div class="trainer-card">
                         <div class="trainer-inner">
@@ -327,7 +348,7 @@
                     </div>
                 </div>
                 
-                <!-- Miembro 2 -->
+                <!-- Miembro 2 del equipo -->
                 <div class="col-md-6 col-lg-3">
                     <div class="trainer-card">
                         <div class="trainer-inner">
@@ -347,7 +368,7 @@
                             <div class="trainer-back">
                                 <h3>Roberto Díaz</h3>
                                 <p>Certificaciones: Spinning, ACE</p>
-                                <p>Instructor de spinning y entrenamiento cardiovascular</p>
+                                <p>Especialista en entrenamiento cardiovascular y resistencia</p>
                                 <div class="skills">
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between mb-1">
@@ -361,6 +382,98 @@
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between mb-1">
                                             <span class="skill-name">Cardio</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 3 del equipo -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer1.jpg" alt="Team Member 3" class="rounded-circle">
+                                <h3>María López</h3>
+                                <p class="text-muted mb-2">Nutrición Deportiva</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="small">8+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>María López</h3>
+                                <p>Certificaciones: ISSN, ACE Nutrition</p>
+                                <p>Nutricionista deportiva especializada en planes personalizados</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Nutrición Deportiva</span>
+                                            <span>99%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Suplementación</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 4 del equipo -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="trainer-card">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <img src="images/trainer2.webp" alt="Team Member 4" class="rounded-circle">
+                                <h3>Pedro Núñez</h3>
+                                <p class="text-muted mb-2">Entrenamiento Funcional</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="small">6+ años de experiencia</p>
+                            </div>
+                            <div class="trainer-back">
+                                <h3>Pedro Núñez</h3>
+                                <p>Certificaciones: NASM, TRX</p>
+                                <p>Especialista en entrenamiento funcional y TRX</p>
+                                <div class="skills">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">TRX</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="skill-name">Entrenamiento Funcional</span>
                                             <span>92%</span>
                                         </div>
                                         <div class="progress">
@@ -372,114 +485,15 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Miembro 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="trainer-card">
-                        <div class="trainer-inner">
-                            <div class="trainer-front">
-                                <img src="images/trainer1.jpg" alt="Team Member 3" class="rounded-circle">
-                                <h3>Patricia López</h3>
-                                <p class="text-muted mb-2">Zumba & Baile</p>
-                                <div class="d-flex justify-content-center mb-3">
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="far fa-star text-warning"></i>
-                                </div>
-                                <p class="small">3+ años de experiencia</p>
-                            </div>
-                            <div class="trainer-back">
-                                <h3>Patricia López</h3>
-                                <p>Certificaciones: Zumba, AFAA</p>
-                                <p>Instructora de zumba y baile fitness</p>
-                                <div class="skills">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span class="skill-name">Zumba</span>
-                                            <span>95%</span>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span class="skill-name">Dance Fitness</span>
-                                            <span>98%</span>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Miembro 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="trainer-card">
-                        <div class="trainer-inner">
-                            <div class="trainer-front">
-                                <img src="images/trainer2.webp" alt="Team Member 4" class="rounded-circle">
-                                <h3>Pedro Morales</h3>
-                                <p class="text-muted mb-2">Boxeo & Artes Marciales</p>
-                                <div class="d-flex justify-content-center mb-3">
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                </div>
-                                <p class="small">8+ años de experiencia</p>
-                            </div>
-                            <div class="trainer-back">
-                                <h3>Pedro Morales</h3>
-                                <p>Certificaciones: Boxing Level 3, Muay Thai</p>
-                                <p>Ex boxeador profesional y entrenador de artes marciales mixtas</p>
-                                <div class="skills">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span class="skill-name">Boxeo</span>
-                                            <span>98%</span>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span class="skill-name">Artes Marciales</span>
-                                            <span>95%</span>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    <!-- ======= FIN SECCIÓN DE EQUIPO ======= -->
 
-    <!-- Sección CTA -->
-    <section class="py-5 bg-primary text-white text-center">
-        <div class="container py-4">
-            <h2 class="mb-4">¿Listo para comenzar tu transformación?</h2>
-            <p class="lead mb-4">Nuestros entrenadores profesionales están listos para guiarte en tu camino al éxito.</p>
-            <a href="contacto.html" class="btn btn-light btn-lg">Agenda una consulta gratuita</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- ======= FOOTER ======= -->
     <footer class="footer pt-5">
         <div class="container">
+            <!-- Información principal del footer -->
             <div class="row g-4 mb-4">
                 <div class="col-lg-3 col-md-6">
                     <h3>PowerGym</h3>
@@ -518,9 +532,7 @@
                     </form>
                 </div>
             </div>
-            <div class="map-container mb-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.715203982529!2d-65.3053882849686!3d-24.18556538438115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sUniversidad%20Nacional%20de%20Jujuy!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <!-- Copyright y enlaces legales -->
             <div class="footer-bottom py-3 border-top">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
@@ -536,11 +548,10 @@
             </div>
         </div>
     </footer>
+    <!-- ======= FIN FOOTER ======= -->
 
-    <!-- Toast Container para notificaciones -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
-
-    <!-- Modal de confirmación -->
+    <!-- ======= COMPONENTES MODALES ======= -->
+    <!-- Modal de confirmación para formularios -->
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -558,7 +569,9 @@
             </div>
         </div>
     </div>
+    <!-- ======= FIN COMPONENTES MODALES ======= -->
 
+    <!-- ======= SCRIPTS ======= -->
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
@@ -567,5 +580,6 @@
     <script src="js/main.js"></script>
     <!-- Script para el efecto flip de entrenadores -->
     <script src="js/trainer-flip.js"></script>
+    <!-- ======= FIN SCRIPTS ======= -->
 </body>
 </html>
