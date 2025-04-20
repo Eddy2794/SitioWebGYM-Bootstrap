@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles-bootstrap.css">
 </head>
 <body>
+    <!-- ======= HEADER / NAVEGACIÓN ======= -->
     <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -91,7 +92,9 @@
         </nav>
     </header>
 
+    <!-- ======= CONTENIDO PRINCIPAL ======= -->
     <main class="blog-page">
+        <!-- ======= CABECERA DE LA PÁGINA ======= -->
         <section class="page-header">
             <div class="container">
                 <h1>Blog de Fitness</h1>
@@ -99,6 +102,7 @@
             </div>
         </section>
         
+        <!-- ======= FILTROS DEL BLOG ======= -->
         <div class="blog-filters py-3">
             <div class="container">
                 <div class="filter-controls d-flex justify-content-center flex-wrap gap-2">
@@ -120,9 +124,11 @@
             </div>
         </div>
         
+        <!-- ======= ARTÍCULOS DEL BLOG ======= -->
         <section class="blog-grid py-5">
             <div class="container">
                 <div class="row g-4" id="blog-container">
+                    <!-- ======= ARTÍCULO DESTACADO ======= -->
                     <div class="col-md-12 col-lg-8 blog-card featured nutrition">
                         <div class="card h-100 class-card">
                             <div class="card-img-top card-image position-relative">
@@ -167,6 +173,7 @@
                         </div>
                     </div>
                     
+                    <!-- ======= ARTÍCULO DE ENTRENAMIENTO ======= -->
                     <div class="col-md-6 col-lg-4 blog-card training">
                         <div class="card h-100 class-card">
                             <div class="card-img-top card-image position-relative">
@@ -201,6 +208,7 @@
                         </div>
                     </div>
                     
+                    <!-- ======= ARTÍCULO DE BIENESTAR ======= -->
                     <div class="col-md-6 col-lg-4 blog-card wellness">
                         <div class="card h-100 class-card">
                             <div class="card-img-top card-image position-relative">
@@ -240,6 +248,7 @@
             </div>
         </section>
         
+        <!-- ======= SECCIÓN DE NEWSLETTER ======= -->
         <section class="newsletter-section py-5 bg-dark text-white">
             <div class="container">
                 <div class="newsletter-box p-4 rounded bg-dark bg-opacity-50">
@@ -256,6 +265,7 @@
         </section>
     </main>
 
+    <!-- ======= FOOTER ======= -->
     <footer class="footer pt-5">
         <div class="container">
             <div class="row g-4 mb-4">
@@ -315,9 +325,11 @@
         </div>
     </footer>
 
+    <!-- ======= COMPONENTES DE INTERACCIÓN ======= -->
     <!-- Toast Container para notificaciones -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
 
+    <!-- ======= SCRIPTS ======= -->
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
@@ -325,7 +337,7 @@
     <!-- Custom scripts -->
     <script src="js/main.js"></script>
     
-    <!-- Script para filtros de blog -->
+    <!-- ======= SCRIPT PARA FILTROS DE BLOG ======= -->
     <script>
         $(document).ready(function() {
             // Implementación de ScrollReveal para artículos del blog
